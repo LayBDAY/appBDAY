@@ -1,0 +1,20 @@
+.countdown-screen {
+  width: 375px;
+  height: 100vh;
+  background: #FFDAE7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: opacity 1s ease-out;
+}
+
+.countdown-screen.fade-out {
+  opacity: 0;
+}
+
+.countdown-gif {
+  width: 375px;
+  height: 812px;
+  object-fit: cover;
+}

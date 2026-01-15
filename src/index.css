@@ -1,0 +1,417 @@
+/* index.css */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fleur+De+Leah&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Carattere&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bayon&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #FFDAE7;
+  overflow-x: hidden;
+}
+
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
+input {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.page-transition {
+  animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+/* Botones */
+.actions {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.btn {
+  width: 146px;
+  height: 60px;
+  background: #F57BA2;
+  border-radius: 15px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'IM Fell French Canon SC', serif;
+  font-size: 13px;
+  line-height: 18.2px;
+}
+
+/* Entrar */
+.enter span {
+  font-family: 'Frank Ruhl Libre', serif;
+  font-size: 15px;
+  font-weight: 900;
+  color: white;
+}
+
+/* Títulos */
+.title-small {
+  font-family: 'Gloock', serif;
+  font-size: 32px;
+  line-height: 30.72px;
+  color: #7E1A30;
+  margin: 0;
+}
+
+.title-big {
+  font-family: 'Gloock', serif;
+  font-size: 48px;
+  line-height: 46.08px;
+  color: #7E1A30;
+  margin: 0 0 40px;
+}
+
+.thanks-big {
+  font-family: 'Gloock', serif;
+  font-size: 48px;
+  color: #7E1A30;
+  margin: 0 0 10px;
+}
+
+.thanks-small {
+  font-family: 'Gloock', serif;
+  font-size: 32px;
+  line-height: 30.72px;
+  color: #7E1A30;
+  margin: 0;
+}
+
+/* Grid de opciones */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 128px);
+  gap: 40px;
+  justify-content: center;
+}
+
+.grid-feed {
+  display: grid;
+  grid-template-columns: repeat(2, 128px);
+  gap: 45px;
+  justify-content: center;
+}
+
+/* Botones */
+.option {
+  width: 128px;
+  height: 128px;
+  background: #E4669D;
+  border-radius: 15px;
+  border: none;
+  color: #FFFFFF;
+  font-family: 'Fredoka One', cursive;
+  font-size: 24px;
+  line-height: 23.04px;
+  cursor: pointer;
+}
+
+.heart-score {
+  width: 128px;
+  height: 128px;
+  border-radius: 15px;
+  border: none;
+  color: #F57BDF;
+  font-family: 'Bayon';
+  font-size: 24px;
+  line-height: 23.04px;
+  background-image: "./assets/heart-score.png";
+}
+
+/* Títulos */
+.question-main {
+  font-family: 'Gloock', serif;
+  font-size: 48px;
+  line-height: 46.08px;
+  color: #A12F53;
+  margin: 0;
+}
+
+.question-sub {
+  font-family: 'Gloock', serif;
+  font-size: 24px;
+  line-height: 23.04px;
+  color: #A12F53;
+  margin-bottom: 20px;
+}
+
+/* Textos */
+.info-text {
+  font-family: 'Gideon Roman', serif;
+  font-size: 12px;
+  line-height: 11.52px;
+  color: #A2365E;
+  margin: 0 auto 30px;
+  max-width: 246px;
+}
+
+.message {
+  font-family: 'Gideon Roman', serif;
+  font-size: 12px;
+  line-height: 11.52px;
+  color: #6D0D30;
+  max-width: 246px;
+  margin: 12px auto;
+}
+
+.feed {
+  width: 375px;
+  margin: auto;
+  animation: fadeIn 0.5s ease forwards;
+}
+
+/* ---------- SAVE THE DATE ---------- */
+.countdown span{
+  display: flex;
+  justify-content: space-between;
+  font-family: 'Francois One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  color: white;
+  letter-spacing: 12px;
+}
+
+
+
+section {
+  position: relative;
+  text-align: center;
+  padding: 60px 20px;
+}
+
+/* ---------- SAVE THE DATE ---------- */
+.countdown {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Francois One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 48px;
+  color: white;
+  letter-spacing: 12px;
+}
+
+/* ---------- TEXTOS ---------- */
+.intro, .party-text, p {
+  font-family: 'Gilda Display';
+  color: #710829;
+}
+
+.btn, .confirmar {
+  display: inline-block;
+  background: #F57BA2;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  font-family: 'IM Fell French Canon SC';
+}
+
+/* ---------- POST IT ---------- */
+.post-it h2 {
+  font-family: 'IM Fell French Canon SC';
+  font-size: 40px;
+  color: #E97D9F;
+}
+
+.post-text {
+  color: #F498B5;
+  font-weight: 400;
+  font-size: 15px;
+  font-style: normal;
+}
+
+.us, .ds {
+  font-family: "Carattere", cursive;
+  font-weight: 400;
+  font-size: 42px;
+  font-style: normal;
+}
+
+/* ---------- DINÁMICAS ---------- */
+.dinamicas h1 {
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 70px;
+  color: #EF4AA5;
+}
+
+.dinamicas-boxes {
+  display: inline;
+}
+
+.savetd {
+  display: flex;
+  margin: auto;
+  block-size: 385px;
+  justify-content: flex-start;
+}
+
+.yacasi {
+  color: #710829;
+  font-family: "Fleur De Leah", cursive;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 40px;
+}
+
+.corazon-mariposa {
+  display: flex;
+  text-align: center;
+  block-size: 330px;
+}
+
+.feed-party {
+  position: relative;
+  width: 100%;
+  max-width: 375px;
+  margin: auto;
+  padding-bottom: 80px;
+}
+
+.paleta {
+  text-align: center;
+  font-size: 13px;
+  margin: 25px 0 0;
+}
+
+.btn-apoyo {
+  padding: 11px 40px;
+  border-radius: 16px;
+  border: none;
+  background: linear-gradient(90deg, #DD667F, #DF8EDD);
+  color: white;
+  font-family: 'IM Fell French Canon SC';
+  font-size: 12px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.camera-container {
+  position: absolute;
+  top: 74px;
+  left: 1px;
+  width: 373px;
+  height: 663px;
+  overflow: hidden;
+}
+
+#camera {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Marco encima */
+.frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+/* Controles */
+.controls {
+  position: absolute;
+  bottom: 110px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+/* Botones */
+.btn {
+  cursor: pointer;
+}
+
+.btn.big {
+  width: 79px;
+  height: 79px;
+}
+
+.btn.small {
+  width: 36px;
+  height: 36px;
+}
+
+.quiz-btn {
+  position: absolute;
+  width: 250px;
+  height: 67px;
+  left: 63px;
+  background: #FF83B0;
+  border-radius: 44px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  font-size: 40px;
+  line-height: 56px;
+
+  cursor: pointer;
+  user-select: none;
+  transition: transform 0.15s ease;
+}
+
+
+.quiz-btn:active {
+  transform: scale(0.96);
+}
+
+/* Posiciones */
+.facil {
+  top: 318px;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.medio {
+  top: 423px;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+
+.dificil {
+  top: 528px;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
